@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login Navigation MVVM</string>
+    <string name="txt_title">Let’s Join Us!</string>
+    <string name="txt_description">We provide you with the best way to organize activities in the classroom</string>
+    <string name="txt_email">Email</string>
+    <string name="btn_join_now">Join Now</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="txt_title_sign_up_form">Let\'s Complete The Form</string>
+    <string name="txt_full_name">Full name</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_password_confirm">Password Confirmation</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="txt_title_sign_in">Pass The Credentials</string>
+    <string name="txt_email_sign_in">Email</string>
+    <string name="txt_password_sign_in">Password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="txt_back_sign_in">Back</string>
+</resources>

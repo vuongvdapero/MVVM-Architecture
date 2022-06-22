@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SignUpFormFragment"
+    android:background="@color/background_screen">
+
+    <TextView
+        android:id="@+id/txtTitleSignUpForm"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="@color/txt_all_screen"
+        android:textSize="@dimen/_18ssp"
+        android:text="@string/txt_title_sign_up_form"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_30sdp"/>
+
+    <ImageView
+        android:id="@+id/imgAvatarSignUpForm"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:src="@drawable/ic_avatar_woman"
+        app:layout_constraintStart_toEndOf="@+id/txtTitleSignUpForm"
+        app:layout_constraintTop_toTopOf="@+id/txtTitleSignUpForm" />
+
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_full_name"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleSignUpForm"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatarSignUpForm" />
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/all_custom_edit_text"
+        android:paddingStart="@dimen/_34sdp"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtFullName"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+
+    <TextView
+        android:id="@+id/txtPasswordSignUpForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_password"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtFullName"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+
+    <EditText
+        android:id="@+id/edtPasswordSignUpForm"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_34sdp"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/all_custom_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordSignUpForm"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordSignUpForm" />
+
+    <TextView
+        android:id="@+id/txtPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_password_confirm"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordSignUpForm"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordSignUpForm" />
+
+    <EditText
+        android:id="@+id/edtPasswordConfirm"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_34sdp"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/all_custom_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordConfirm" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:text="@string/btn_sign_up"
+        android:textStyle="bold"
+        android:background="@drawable/all_custom_button"
+        android:textColor="@color/txt_all_screen"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordConfirm"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordConfirm" />
+
+    <TextView
+        android:id="@+id/txtBackSignUpForm"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_back_sign_in"
+        android:textColor="@color/txt_all_screen"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+    <ImageView
+        android:id="@+id/imgFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_full_name"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtFullName"
+        app:layout_constraintTop_toTopOf="@+id/edtFullName" />
+
+    <ImageView
+        android:id="@+id/imgPasswordSignUpForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_password"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordSignUpForm"
+        app:layout_constraintTop_toTopOf="@+id/edtPasswordSignUpForm" />
+
+    <ImageView
+        android:id="@+id/imgPasswordConFirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_password"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordConfirm"
+        app:layout_constraintTop_toTopOf="@+id/edtPasswordConfirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

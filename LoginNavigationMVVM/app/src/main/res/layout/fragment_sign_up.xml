@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SignUpFragment"
+    android:background="@color/background_screen">
+
+    <ImageView
+        android:id="@+id/imgAvatarSignUp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_64sdp"
+
+        android:src="@drawable/ic_avatar_woman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitleSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/txt_title"
+        android:textStyle="bold"
+        android:textColor="@color/txt_all_screen"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatarSignUp" />
+
+    <TextView
+        android:id="@+id/txtDescriptionSignUp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/_13ssp"
+        android:text="@string/txt_description"
+        android:textColor="@color/txt_all_screen"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleSignUp" />
+
+    <TextView
+        android:id="@+id/txtEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_email"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtDescriptionSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionSignUp" />
+
+    <EditText
+        android:id="@+id/edtEmailSignUp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_34sdp"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/all_custom_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescriptionSignUp"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailSignUp" />
+
+    <Button
+        android:id="@+id/btnJoinNow"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:text="@string/btn_join_now"
+        android:textStyle="bold"
+        android:textColor="@color/txt_all_screen"
+        android:background="@drawable/all_custom_button"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailSignUp"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailSignUp" />
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sign_in"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/btnJoinNow"
+        android:textColor="@color/txt_all_screen"
+        app:layout_constraintStart_toStartOf="@+id/btnJoinNow"
+        app:layout_constraintTop_toBottomOf="@+id/btnJoinNow" />
+
+    <ImageView
+        android:id="@+id/imgDenotationEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:src="@drawable/ic_denotation_email"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailSignUp"
+        app:layout_constraintTop_toTopOf="@+id/edtEmailSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

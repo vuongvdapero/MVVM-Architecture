@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/signUpFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.loginnavigationmvvm.view.SignUpFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/actionSignUpToSignUpForm"
+            app:destination="@id/signUpFormFragment" />
+        <action
+            android:id="@+id/actionSignUpToSignIn"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFormFragment"
+        android:name="com.example.loginnavigationmvvm.view.SignUpFormFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_sign_up_form" >
+        <action
+            android:id="@+id/actionSignUpFormToSignUp"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/actionSignUpFormToSignIn"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.loginnavigationmvvm.view.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/actionSignInToSignUpForm"
+            app:destination="@id/signUpFormFragment" />
+    </fragment>
+</navigation>

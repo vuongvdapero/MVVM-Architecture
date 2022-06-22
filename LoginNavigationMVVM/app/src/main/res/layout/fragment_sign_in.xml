@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SignInFragment"
+    android:background="@color/background_screen">
+
+    <ImageView
+        android:id="@+id/imgAvatarSignIn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/ic_avatar_sign_in"
+        android:layout_marginTop="@dimen/_70sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitleSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="@string/txt_title_sign_in"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/txt_all_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatarSignIn" />
+
+    <TextView
+        android:id="@+id/txtEmailSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_email_sign_in"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleSignIn" />
+
+    <EditText
+        android:id="@+id/edtEmailSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_34sdp"
+        android:background="@drawable/all_custom_edit_text"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailSignIn" />
+
+    <TextView
+        android:id="@+id/txtPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_password_sign_in"
+        android:textColor="@color/txt_all_screen"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailSignIn" />
+
+    <EditText
+        android:id="@+id/edtPasswordSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/all_custom_edit_text"
+        android:paddingStart="@dimen/_34sdp"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordSignIn" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sign_in"
+        android:background="@drawable/all_custom_button"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textColor="@color/txt_all_screen"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordSignIn"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordSignIn" />
+
+    <TextView
+        android:id="@+id/txtBackSignIn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_back_sign_in"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/txt_all_screen"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <ImageView
+        android:id="@+id/imgDenotationEmailSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_denotation_email"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailSignIn"
+        app:layout_constraintTop_toTopOf="@+id/edtEmailSignIn" />
+
+    <ImageView
+        android:id="@+id/imgDenotationPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_password"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordSignIn"
+        app:layout_constraintTop_toTopOf="@+id/edtPasswordSignIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
